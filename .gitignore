@@ -1,0 +1,31 @@
+# Python
+*.pyc
+*~
+__pycache__/
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+
+# Directories
+.idea/
+__pycache__/
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Datasets
+data/
+
+# Models
+models/
+
+# OS files
+.DS_Store
+Thumbs.db
