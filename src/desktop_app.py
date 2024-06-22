@@ -7,7 +7,6 @@ import numpy as np
 import cv2
 import tensorflow as tf
 
-# Load the Keras model
 model_path = '../models/emotion_detection_model.h5'
 try:
     emotion_model = tf.keras.models.load_model(model_path)
@@ -16,7 +15,6 @@ except Exception as e:
     print(f"Error loading model: {e}")
     exit("Could not load the model. Exiting...")
 
-# Function to preprocess image
 def preprocess_image(img):
     img = img.convert('L')  # Convert to grayscale
     img = img.resize((48, 48))  # Resize to the model's input size
